@@ -32,4 +32,36 @@ const myFunction =function() {
     console.log("Hello Word");    
 }
 
-console.log(typeof myFunction);
+// console.log(typeof myFunction);
+
+
+//Memory  Stack (Primitive), Heap (Non-Primitive)
+
+let myYoutubename = "krantipatildotcom"
+
+//Stack (Primitive)
+// here primitive values going to stack and allways if you taken inside the stack then there only copy get and edit 
+let anothername = myYoutubename
+anothername ="KK"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+
+//Heap (Non-Primitive)
+// if taken non-primitive then get referance 
+let userOne ={
+    email: "kranti@google.com",
+    upi:"user@ybe"
+}
+
+let userTwo = userOne
+
+userTwo.email = "kranti4211@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
+
